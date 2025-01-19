@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
     Navbar,
     NavbarBrand,
@@ -11,20 +11,30 @@ import {
     NavbarMenuItem,
     NavbarMenuToggle,
 } from "@nextui-org/react";
-import Image from "next/image";
 import { AlignLeft, AlignRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function HeaderComponent() {
-    const [isActive, setIsActive] = useState("./");
+    const [isActive, setIsActive] = useState<string>("./");
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const router = useRouter();
 
+    const handleButtonClick = () => {
+        router.push('/book-now');  // Navigate to the "book-now" page
+    };
     const navItems = [
-        { label: "Home", href: "./" },
+        { label: "Home", href: "/" },
         { label: "Services", href: "/service" },
         { label: "About", href: "/about" },
-        { label: "Contact", href: "./#contact" },
+        { label: "Contact", href: "/contact" },
     ];  
+
+    useEffect(() => {
+        // Update active state based on the current path
+        const currentPath = window.location.pathname;
+        setIsActive(currentPath);
+    }, []);
 
     return (
         <Navbar
@@ -55,7 +65,7 @@ export default function HeaderComponent() {
                     </NavbarItem>
                 ))}
                 <NavbarItem>
-                    <Button as={Link} color="primary" href="#" variant='solid' className="rounded-md">
+                    <Button as={Link} onClick={handleButtonClick} color="primary" href="#" variant='solid' className="rounded-md">
                         Book Now
                     </Button>
                 </NavbarItem>

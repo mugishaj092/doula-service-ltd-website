@@ -14,14 +14,14 @@ const heroCardsData = [
     {
         headerTitle: "Care for You, Care for Baby.",
         headerSubtitle: "Empowering Women Everywhere.",
-        imageSrc: "/postnatal.png",
+        imageSrc: "/prenatal.png",
         footerTitle: "Postnatal care",
         footerSubtitle: "Support for Every Stage.",
     },
     {
         headerTitle: "Building Bright Futures.",
         headerSubtitle: "Healthy Steps Forward.",
-        imageSrc: "/childcare.png",
+        imageSrc: "/prenatal.png",
         footerTitle: "Childcare support",
         footerSubtitle: "Helping Kids Thrive.",
     },
@@ -31,19 +31,19 @@ const heroCardsData = [
 const ServiceHero = () => {
     return (
         <div className='w-full mt-20 flex flex-col gap-16'>
-            <div className='flex'>
+            <div className='flex max-md:flex-col'>
                 <div className='flex flex-col w-1/2'>
                     <span className='text-md'>
                         Our service
                     </span>
                     <h1 className='text-xl font-semibold text-primary'>Services We Offer</h1>
                 </div>
-                <div className='flex w-1/2'>
+                <div className='flex w-1/2 max-md:w-full'>
                     <p className='w-[80%] text-sm text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit Ipsum available, but the majority simply free text now have suffered alteration.</p>
                     <Button as={Link} color="primary" size='md' href="#" variant='solid' className="rounded-md w-35">Discover More</Button>
                 </div>
             </div>
-            <div className='flex gap-4'>
+            <div className='flex gap-4 max-md:flex-col'>
                 {heroCardsData.map((data, index) => (
                     <HeroCard
                         key={index}

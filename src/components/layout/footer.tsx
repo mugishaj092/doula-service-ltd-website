@@ -57,7 +57,7 @@ function FooterComp() {
                                         </defs>
                                     </svg>
                                 </span>
-                                <span>+250 792418795</span>
+                                <span>+250 79</span>
                             </p>
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 import { Button, Card, CardFooter, CardHeader, Image } from '@nextui-org/react'
 import React, { useState } from 'react'
 
-const HeroCard = ({ headerTitle, headerSubtitle, imageSrc, footerTitle, footerSubtitle }: any) => {
+const HeroCard = ({ headerTitle, headerSubtitle, imageSrc, footerTitle, footerSubtitle }: { headerTitle:string, headerSubtitle:string, imageSrc:string, footerTitle:string, footerSubtitle:string } ) => {
     const [isHovered, setIsHovered] = useState(false)
 
     return (

@@ -1,5 +1,4 @@
 import { icons } from '@/utils/constant/icons'
-import { images } from '@/utils/constant/images'
 import Image from 'next/image'
 import React from 'react'
 

@@ -1,6 +1,6 @@
 'use client'
 import { images } from '@/utils/constant/images'
-import { Button, image } from '@nextui-org/react'
+import { Button } from '@nextui-org/react'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation';
 import React from 'react'

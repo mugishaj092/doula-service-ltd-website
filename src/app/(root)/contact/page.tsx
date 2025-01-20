@@ -10,7 +10,7 @@ interface FormData {
 }
 
 const Contacts: React.FC = () => {
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState<FormData>({
         full_names: "",
         email: "",
         telephone: "",
@@ -78,13 +78,11 @@ const Contacts: React.FC = () => {
             setLoading(false);
         }
     };
-
     return (
         <section className="lg:px-20 relative z-10 overflow-hidden bg-white py-0 max-md:py-0 lg:py-[50px]">
             <div className="container mx-auto">
                 <div className="-mx-4 flex flex-wrap lg:justify-between">
                     <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
-                        {/* Contact information */}
                         <div className="mb-12 max-w-[570px] lg:mb-0 max-md:mx-4">
                             <span className="mb-2 block text-md font-semibold text-primary">
                                 Contact Us

@@ -27,7 +27,7 @@ const OurVision = () => {
                 </div>
                 <h2 className="text-2xl font-bold text-purple-600">Our Vision</h2>
             </div>
-            <p className="text-gray-600 text-center leading-relaxed">
+            <p className="text-gray-600 text-center leading-relaxed max-md:text-left">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe praesentium autem,
                 sed diam euismod erat, sed diam euismod erat, sed diam euismod erat, sed diam e consequ id elit.
             </p>

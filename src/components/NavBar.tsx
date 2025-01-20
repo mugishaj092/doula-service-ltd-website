@@ -13,6 +13,8 @@ import {
 } from "@nextui-org/react";
 import { AlignLeft, AlignRight } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { images } from "@/utils/constant/images";
+import Image from "next/image";
 
 export default function HeaderComponent() {
     const [isActive, setIsActive] = useState<string>("./");
@@ -45,6 +47,7 @@ export default function HeaderComponent() {
         >
             <NavbarBrand>
                 <Link className="font-bold text-inherit" color="foreground" href="./">
+                <Image width={80} src={images.logo} alt="logo" />
                     <span className="text-primary font-semibold p-2 text-4xl">
                         Doula
                     </span>

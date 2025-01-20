@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { images } from "@/utils/constant/images";
 
 
 function FooterComp() {
@@ -13,13 +14,13 @@ function FooterComp() {
                     <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
                         <div className="mb-10 w-full">
                             <a
-                                className="mb-6 inline-block max-w-[160px]"
+                                className="mb-6 inline-block max-w-[160px] bg-white p-4 rounded-3xl"
                             >
-                                {/* <Image
-                                    src={logo}
+                                <Image
+                                    src={images.logo}
                                     alt="logo"
                                     className="w-24"
-                                /> */}
+                                />
                             </a>
                             <p className="mb-7 text-base text-body-color text-gray-200">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -56,7 +57,7 @@ function FooterComp() {
                                         </defs>
                                     </svg>
                                 </span>
-                                <span>+250 790429049</span>
+                                <span>+250 792418795</span>
                             </p>
                         </div>
                     </div>

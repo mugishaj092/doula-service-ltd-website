@@ -9,12 +9,12 @@ const Services = () => {
     const router = useRouter();
 
     const handleButtonClick = () => {
-        router.push('/book-now');  // Navigate to the "book-now" page
+        router.push('/book-now');
     };
     return (
-        <div className='flex flex-col gap-10 text-gray-600 leading-relaxed'>
+        <div className='flex flex-col gap-10 text-gray-600 leading-relaxed pb-4'>
             <div className='flex gap-4 max-md:flex-col'>
-                <div className='w-1/2'>
+                <div className='w-1/2 max-md:w-full'>
                     <Image className='w-full' src={images.prenatal} alt='services' />
                 </div>
                 <div className='text-sm'>

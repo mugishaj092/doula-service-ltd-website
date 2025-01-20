@@ -10,8 +10,7 @@ const AppLayout: FC<Props> = ({ children }) => {
     return (
         <div className='w-full'>
             <HeaderComponent />
-            <div className='h-10'></div>
-            <div className='px-20 max-md:px-10 py-10 max-md:pt-30'>
+            <div className='px-20 max-md:px-5 max-md:py-0 py-10 max-md:pt-30'>
                 {children}
             </div>
             <FooterComp />

@@ -5,7 +5,7 @@ import React from 'react'
 
 const page = () => {
     return (
-        <div>
+        <div className='max-md:py-16'>
             <HeroSection />
             <ServiceHero />
             <HowItsworks />

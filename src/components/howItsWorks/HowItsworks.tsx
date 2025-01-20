@@ -7,7 +7,7 @@ const HowItsworks = () => {
         <div className='w-full flex gap-8 justify-between flex-wrap pt-20 max-md:flex-col'>
             <div className='w-[31%] max-md:w-full'>
                 <span className='text-primary'>Why You Choose Us?</span>
-                <h1 className='text-2xl font-semibold'>Committed To People's Life</h1>
+                <h1 className='text-2xl font-semibold'>Committed To People Life</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.

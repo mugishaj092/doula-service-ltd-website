@@ -27,9 +27,8 @@ const OurVision = () => {
                 </div>
                 <h2 className="text-2xl font-bold text-purple-600">Our Vision</h2>
             </div>
-            <p className="text-gray-600 text-center leading-relaxed max-md:text-left">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe praesentium autem,
-                sed diam euismod erat, sed diam euismod erat, sed diam euismod erat, sed diam e consequ id elit.
+            <p className="text-gray-600 text-lg text-center leading-relaxed max-md:text-left">
+                To reduce maternal and neonatal mortality rates in Rwanda by offering accessible, compassionate, and expert doula services that complement traditional healthcare practices.
             </p>
         </div>
     );

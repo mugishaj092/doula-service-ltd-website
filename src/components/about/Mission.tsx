@@ -22,8 +22,7 @@ const OurMission = () => {
         <h2 className="text-2xl font-bold text-blue-600">Our Mission</h2>
       </div>
       <p className="text-gray-600 text-center leading-relaxed max-md:text-left">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe praesentium autem,
-         sed diam euismod erat, sed diam euismod erat, sed diam euismod erat, sed diam e consequ id elit.
+        NYINAWUMUNTU DOULA SERVICES Ltd is committed to enhancing maternal health outcomes by integrating continuous doula support into Rwanda’s healthcare system. Our team of trained doulas provides emotional, physical, and informational support to mothers, ensuring their well-being and satisfaction throughout their birthing journey.
       </p>
     </div>
   );

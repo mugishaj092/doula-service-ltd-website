@@ -15,8 +15,8 @@ const HeroSection = () => {
     return (
         <div className='w-full flex justify-between max-md:flex-col'>
             <div className='w-1/2 max-md:w-full flex flex-col justify-center gap-4 h-[70vh] max-md:h-[50vh] '>
-                <h1 className='text-5xl font-semibold text-primary'>Empowering Mothers, Transforming Lives</h1>
-                <p className='text-lg text-dark'>Providing compassionate support for every step of your maternal journey. Together, we ensure safer, healthier, and happier birth experiences.</p>
+                <h1 className='text-5xl max-md:text-3xl font-semibold text-primary'>Empowering Mothers, Transforming Lives</h1>
+                <p className='text-lg max-md:text-sm text-dark'>At NYINAWUMUNTU DOULA SERVICES Ltd, we are dedicated to improving maternal and neonatal health outcomes in Rwanda. Our services provide personalized, non-medical support to mothers throughout pregnancy, childbirth, and the postpartum period. Through our doula services, we aim to reduce maternal and neonatal mortality rates and improve the overall birth experience for every woman.</p>
                 <div className='flex justify-between gap-2 flex-wrap'>
                     <div className='flex gap-3 items-end text-lg'>
                         <CircleCheckBig size={30} strokeWidth={2.5} className=' font-bold' />

@@ -1,5 +1,4 @@
 'use client'
-import Services from '@/components/services/Services'
 import { images } from '@/utils/constant/images'
 import { Button, Card, CardBody, CardFooter } from '@nextui-org/react'
 import { SquareDashedMousePointer } from 'lucide-react'

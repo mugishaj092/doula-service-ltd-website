@@ -1,38 +1,35 @@
-import { Button, Card, CardFooter, CardHeader, Image } from '@nextui-org/react'
+import { images } from '@/utils/constant/images'
+import { Button, Card, CardBody, CardFooter, CardHeader, Image } from '@nextui-org/react'
+import { SquareDashedMousePointer } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 
-const HeroCard = ({ headerTitle, headerSubtitle, imageSrc, footerTitle, footerSubtitle }: { headerTitle:string, headerSubtitle:string, imageSrc:string, footerTitle:string, footerSubtitle:string } ) => {
+const HeroCard = ({ headerTitle, imageSrc,}: { headerTitle:string, imageSrc:string } ) => {
     const [isHovered, setIsHovered] = useState(false)
-
+              const router = useRouter();
+              const handleButtonClick = (link:string) => {
+                  router.push(link);
+                  console.log('button clicked');
+              };
     return (
-        <Card
-            isFooterBlurred
-            className="w-full h-[300px] col-span-12 sm:col-span-7 relative overflow-hidden"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-        >
-            <CardHeader
-                className={`absolute bg-black/40 z-10 top-1 flex-col items-start transition-all duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'
-                    }`}
-            >
-                <p className="text-tiny text-white/60 uppercase font-bold">{headerSubtitle}</p>
-                <h4 className="text-white/90 font-medium text-xl">{headerTitle}</h4>
-            </CardHeader>
-            <Image
-                removeWrapper
-                alt="Relaxing app background"
-                className="z-0 w-full h-full object-cover"
-                src={imageSrc}
-            />
-            <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
-                <div className="flex flex-grow gap-2 items-center">
-                    <div className="flex flex-col">
-                        <p className="text-tiny text-white/60">{footerTitle}</p>
-                        <p className="text-tiny text-white/60">{footerSubtitle}</p>
+        <Card className="w-[35%] max-md:w-full max-w-2xl p-0 bg-[#f0dee4a1] rounded-xl">
+            <CardBody className="flex flex-col gap-2 items-center md:items-start">
+                <div className="flex justify-center items-center p-2 w-full rounded-lg bg-[#d7c2c9] h-40">
+                    <Image
+                        src={imageSrc}
+                        alt="services"
+                        className="object-contain w-44"
+                    />
+                </div>
+                <div className="flex flex-col justify-between w-full">
+                    <div className="flex flex-col gap-2">
+                        <span className="text-lg font-medium text-[#64748B]">{headerTitle}</span>
                     </div>
                 </div>
-                <Button color="primary" radius="md" size="sm">
-                    Book now
+            </CardBody>
+            <CardFooter>
+                <Button color="primary" size="md" onPress={() => handleButtonClick("/book-now")} className="w-full rounded-md">
+                    Book Now
                 </Button>
             </CardFooter>
         </Card>

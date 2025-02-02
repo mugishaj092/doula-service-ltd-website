@@ -11,7 +11,6 @@ const Page = () => {
           const handleButtonClick = (link:string) => {
               router.push(link);
               console.log('button clicked');
-              
           };
   return (
     <div className='flex flex-col gap-8'>
@@ -26,7 +25,7 @@ const Page = () => {
         <div className='flex flex-col gap-4 w-[65%] max-md:w-full'>
           <Card className="w-full p-0 bg-[#f0dee4a1] rounded-xl">
             <CardBody className="flex flex-col md:flex-row gap-4 items-center md:items-start">
-              <div className="flex justify-center items-center p-2 max-md:w-full rounded-lg bg-primary w-40 h-full">
+              <div className="flex justify-center items-center p-2 max-md:w-full rounded-lg bg-[#d7c2c9] w-40 h-full">
                 <Image
                   src={images.prenatal}
                   alt="services"
@@ -57,7 +56,7 @@ const Page = () => {
           </Card>
           <Card className="w-full p-0 bg-[#f0dee4a1] rounded-xl">
             <CardBody className="flex flex-col md:flex-row gap-4 items-center md:items-start">
-              <div className="flex justify-center items-center p-2 max-md:w-full rounded-lg bg-primary w-40 h-full max-md:h-40">
+              <div className="flex justify-center items-center p-2 max-md:w-full rounded-lg bg-[#d7c2c9] w-40 h-full max-md:h-40">
                 <Image
                   src={images.prenatal}
                   alt="services"
@@ -89,7 +88,7 @@ const Page = () => {
         </div>
         <Card className="w-[35%] max-md:w-full max-w-2xl p-0 bg-[#f0dee4a1] rounded-xl">
           <CardBody className="flex flex-col gap-4 items-center md:items-start">
-            <div className="flex justify-center items-center p-2 w-full rounded-lg bg-primary h-40">
+            <div className="flex justify-center items-center p-2 w-full rounded-lg bg-[#d7c2c9] h-40">
               <Image
                 src={images.prenatal}
                 alt="services"

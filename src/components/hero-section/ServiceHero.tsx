@@ -5,25 +5,16 @@ import React from 'react'
 import HeroCard from './HeroCard'
 const heroCardsData = [
     {
-        headerTitle: "Strong Beginnings, Bright Futures.",
-        headerSubtitle: "Nurturing You, Caring for Baby.",
+        headerTitle: "Prenatal Care",
         imageSrc: "/prenatal.png",
-        footerTitle: "Prenatal support",
-        footerSubtitle: "Healthy Moms, Happy Babies.",
     },
     {
-        headerTitle: "Care for You, Care for Baby.",
-        headerSubtitle: "Empowering Women Everywhere.",
+        headerTitle: "Labor and Birth Support",
         imageSrc: "/prenatal.png",
-        footerTitle: "Postnatal care",
-        footerSubtitle: "Support for Every Stage.",
     },
     {
-        headerTitle: "Building Bright Futures.",
-        headerSubtitle: "Healthy Steps Forward.",
+        headerTitle: "Postpartum Care",
         imageSrc: "/prenatal.png",
-        footerTitle: "Childcare support",
-        footerSubtitle: "Helping Kids Thrive.",
     },
 ]
 
@@ -39,8 +30,8 @@ const ServiceHero = () => {
                     <h1 className='text-xl font-semibold text-primary'>Services We Offer</h1>
                 </div>
                 <div className='flex w-1/2 max-md:w-full'>
-                    <p className='w-[80%] text-sm text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit Ipsum available, but the majority simply free text now have suffered alteration.</p>
-                    <Button as={Link} color="primary" size='md' href="#" variant='solid' className="rounded-md w-35">Discover More</Button>
+                    <p className='w-[80%] text-sm text-gray-600'>NYINAWUMUNTU DOULA SERVICES Ltd provides comprehensive support throughout pregnancy, labor, and postpartum, ensuring the well-being of both mother and baby.</p>
+                    <Button as={Link} color="primary" size='md' href="/service" variant='solid' className="rounded-md w-35">Discover More</Button>
                 </div>
             </div>
             <div className='flex gap-4 max-md:flex-col'>
@@ -48,10 +39,7 @@ const ServiceHero = () => {
                     <HeroCard
                         key={index}
                         headerTitle={data.headerTitle}
-                        headerSubtitle={data.headerSubtitle}
                         imageSrc={data.imageSrc}
-                        footerTitle={data.footerTitle}
-                        footerSubtitle={data.footerSubtitle}
                     />
                 ))}
             </div>

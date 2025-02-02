@@ -91,9 +91,7 @@ const Contacts: React.FC = () => {
                                 GET IN TOUCH WITH US
                             </h2>
                             <p className="mb-9 text-sm leading-relaxed text-gray-600">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Nesciunt porro architecto debitis excepturi maxime aliquid
-                                libero hic saepe?
+                                Have questions about our services or want to get involved? We’d love to hear from you. Whether you're a mother seeking support or an aspiring doula, we're here to help.
                             </p>
                             <div className="mb-8 flex w-full max-w-[370px]">
                                 <div
@@ -158,7 +156,7 @@ const Contacts: React.FC = () => {
                                         Phone Number
                                     </h4>
                                     <p className="text-base text-body-color dark:text-dark-6">
-                                        (+250) 792418795
+                                        +250 780514663
                                     </p>
                                 </div>
                             </div>
@@ -185,7 +183,7 @@ const Contacts: React.FC = () => {
                                         Email Address
                                     </h4>
                                     <p className="text-base text-body-color dark:text-dark-6">
-                                        duolasupport@gmail.com
+                                        nyinawumuntudoulaservicesltd@gmail.com
                                     </p>
                                 </div>
                             </div>

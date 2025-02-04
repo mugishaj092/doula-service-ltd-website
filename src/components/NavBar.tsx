@@ -23,17 +23,17 @@ export default function HeaderComponent() {
     const router = useRouter();
 
     const handleButtonClick = () => {
-        router.push('/book-now');  // Navigate to the "book-now" page
+        router.push('/book-now');
     };
     const navItems = [
         { label: "Home", href: "/" },
         { label: "Services", href: "/service" },
         { label: "About", href: "/about" },
         { label: "Contact", href: "/contact" },
+        { label: "Became a doula    ", href: "/became-a-doula" },
     ];  
 
     useEffect(() => {
-        // Update active state based on the current path
         const currentPath = window.location.pathname;
         setIsActive(currentPath);
     }, []);
@@ -48,9 +48,14 @@ export default function HeaderComponent() {
             <NavbarBrand>
                 <Link className="font-bold text-inherit" color="foreground" href="./">
                 <Image width={80} src={images.logo} alt="logo" />
-                    <span className="text-primary font-semibold p-2 text-4xl">
-                        Doula
-                    </span>
+                    <div className="flex flex-col justify-center gap-0 h-10">
+                        <span className="text-primary font-semibold text-3xl">
+                            Doula
+                        </span>
+                        <span className="text-primary font-semibold text-lg">
+                            NYINAWUMUNTU
+                        </span>
+                    </div>
                 </Link>
             </NavbarBrand>
 
@@ -58,7 +63,11 @@ export default function HeaderComponent() {
                 {navItems.map((item) => (
                     <NavbarItem key={item.href} isActive={isActive === item.href}>
                         <Link
-                            onClick={() => setIsActive(item.href)}
+                            onClick={(e) => {
+                                e.preventDefault(); // Prevent default link behavior
+                                setIsActive(item.href);
+                                router.push(item.href); // Use Next.js client-side navigation
+                            }}
                             color="foreground"
                             href={item.href}
                             className={`${isActive === item.href ? "!text-primary" : ""}`}
@@ -94,11 +103,13 @@ export default function HeaderComponent() {
                 {navItems.map((item) => (
                     <NavbarMenuItem key={item.href}>
                         <Link
-                            onClick={() => {
+                            onClick={(e) => {
+                                e.preventDefault(); 
                                 setIsActive(item.href);
+                                router.push(item.href); 
                                 setIsMenuOpen(false);
                             }}
-                            className="text-black dark:text-white"
+                            className={`text-black dark:text-white ${isActive === item.href ? "!text-primary" : ""}`}
                             color="foreground"
                             href={item.href}
                         >

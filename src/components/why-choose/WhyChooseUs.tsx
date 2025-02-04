@@ -17,8 +17,8 @@ const WhyChooseUs = () => {
                         <span className='text-primary'>Why Choose Us</span>
                         <span className='text-4xl font-semibold'>Why Choose Us?</span>
                     </div>
-                    <div className='flex gap-3 pt-3'>
-                        <div className='flex flex-col gap-3 border border-gray-300 p-4 rounded-lg w-1/2'>
+                    <div className='flex gap-3 pt-3 max-sm:flex-col'>
+                        <div className='flex flex-col gap-3 border border-gray-300 p-4 rounded-lg w-1/2 max-sm:w-full'>
                             <div className='flex gap-2 items-end'>
                                 <div className='flex h-10 w-10 justify-center items-center bg-orange-200 border border-orange-500 text-orange-500 p-2 rounded-md'><ShieldQuestion /></div>
                                 <span className='text-2xl font-semibold'>Why Choose Doula Support?</span>
@@ -31,7 +31,7 @@ const WhyChooseUs = () => {
                                 <li className='flex gap-2 items-center'><span><SquareDashedMousePointer width={20} /></span>Reduced anxiety and improved emotional well-being</li>
                             </ul>
                         </div>
-                        <div className='flex flex-col gap-3 border border-gray-300 p-4 rounded-lg w-1/2'>
+                        <div className='flex flex-col gap-3 border border-gray-300 p-4 rounded-lg w-1/2 max-sm:w-full'>
                             <div className='flex gap-2 items-end'>
                                 <div className='flex h-10 w-10 justify-center items-center bg-orange-200 border border-orange-500 text-orange-500 p-2 rounded-md'><ShieldQuestion /></div>
                                 <span className='text-2xl font-semibold'>Why Doula services are crucial in Rwanda?</span>

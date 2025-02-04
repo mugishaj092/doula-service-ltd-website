@@ -91,7 +91,7 @@ const Contacts: React.FC = () => {
                                 GET IN TOUCH WITH US
                             </h2>
                             <p className="mb-9 text-sm leading-relaxed text-gray-600">
-                                Have questions about our services or want to get involved? We’d love to hear from you. Whether you're a mother seeking support or an aspiring doula, we're here to help.
+                                Have questions about our services or want to get involved? We&apos;d love to hear from you. Whether you&apos;re a mother seeking support or an aspiring doula, we&apos;re here to help.
                             </p>
                             <div className="mb-8 flex w-full max-w-[370px]">
                                 <div

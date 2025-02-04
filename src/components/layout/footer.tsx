@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import { images } from "@/utils/constant/images";
-import { Instagram, Twitter } from "lucide-react";
 import Link from "next/link";
 
 

@@ -1,16 +1,13 @@
-import { images } from '@/utils/constant/images'
-import { Button, Card, CardBody, CardFooter, CardHeader, Image } from '@nextui-org/react'
-import { SquareDashedMousePointer } from 'lucide-react'
+import { Button, Card, CardBody, CardFooter, Image } from '@nextui-org/react'
 import { useRouter } from 'next/navigation'
-import React, { useState } from 'react'
+import React from 'react'
 
-const HeroCard = ({ headerTitle, imageSrc,}: { headerTitle:string, imageSrc:string } ) => {
-    const [isHovered, setIsHovered] = useState(false)
-              const router = useRouter();
-              const handleButtonClick = (link:string) => {
-                  router.push(link);
-                  console.log('button clicked');
-              };
+const HeroCard = ({ headerTitle, imageSrc, }: { headerTitle: string, imageSrc: string }) => {
+    const router = useRouter();
+    const handleButtonClick = (link: string) => {
+        router.push(link);
+        console.log('button clicked');
+    };
     return (
         <Card className="w-[35%] max-md:w-full max-w-2xl p-0 bg-[#f0dee4a1] rounded-xl">
             <CardBody className="flex flex-col gap-2 items-center md:items-start">

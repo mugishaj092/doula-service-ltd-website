@@ -55,9 +55,9 @@ export const metadata: Metadata = {
     images: ["https://nyinawumuntudoulaservices.com/og-image.jpg"],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
     shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    apple: "/favicon.png",
   },
 };
 
@@ -70,6 +70,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.png" sizes="32x32" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased w-full`}
       >

@@ -5,6 +5,8 @@ import { Card, CardBody } from "@nextui-org/react";
 import { FaHeartbeat, FaUsers, FaCertificate } from "react-icons/fa";
 import { images } from "@/utils/constant/images";
 import Image from "next/image";
+import { link } from "fs";
+import Link from "next/link";
 
 const BecomeDoula = () => {
     return (
@@ -14,9 +16,11 @@ const BecomeDoula = () => {
                 <p className="mt-4 text-lg max-w-2xl mx-auto">
                     Empower women, support families, and make a difference in maternal health in Rwanda.
                 </p>
-                <Button className="mt-6 bg-white text-primary px-6 py-3 rounded-lg font-semibold">
-                    Register for Training
-                </Button>
+                <Link href="https://forms.gle/CVDesSYXiXJCGp9g6" passHref>
+                    <Button className="mt-6 bg-white text-primary px-6 py-3 rounded-lg font-semibold">
+                        Register for Training
+                    </Button>
+                </Link>
             </section>
             <section className="container mx-auto px-6 py-16 max-sm:py-8 grid md:grid-cols-2 gap-10 rounded-b-lg">
                 <div>
@@ -67,9 +71,11 @@ const BecomeDoula = () => {
             </section>
             <section className="text-center py-16 max-sm:py-8 max-sm:mb-4 bg-primary text-white rounded-lg shadow-lg">
                 <h2 className="text-3xl font-bold">Take the First Step in Becoming a Doula</h2>
-                <Button className="mt-6 bg-white text-primary px-6 py-3 rounded-lg font-semibold ">
-                    Register Now
-                </Button>
+                <Link href="https://forms.gle/CVDesSYXiXJCGp9g6" passHref>
+                    <Button className="mt-6 bg-white text-primary px-6 py-3 rounded-lg font-semibold">
+                        Register Now
+                    </Button>
+                </Link>
             </section>
         </div>
     );

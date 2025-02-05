@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Providers from "@/Providers"
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -76,6 +77,25 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased w-full`}
       >
+        <Script
+          id="cody-bot"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.codySettings = { widget_id: '9e22c0e2-c185-42c3-ac1f-1e16b2cb0064' };
+
+              (function(){
+                var t=window, e=document, a=function(){
+                  var t=e.createElement("script");
+                  t.type="text/javascript", t.async=!0, t.src="https://trinketsofcody.com/cody-widget.js";
+                  var a=e.getElementsByTagName("script")[0];
+                  a.parentNode.insertBefore(t,a);
+                };
+                "complete"===document.readyState ? a() : t.attachEvent ? t.attachEvent("onload",a) : t.addEventListener("load",a,!1);
+              })();
+            `,
+          }}
+        />
         <Providers>
           {children}
         </Providers>

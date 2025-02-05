@@ -1,3 +1,4 @@
+import Faq from '@/components/faq/Faq'
 import HeroSection from '@/components/hero-section/Hero'
 import ServiceHero from '@/components/hero-section/ServiceHero'
 import HowItsworks from '@/components/howItsWorks/HowItsworks'
@@ -11,6 +12,7 @@ const page = () => {
             <ServiceHero />
             <HowItsworks />
             <WhyChooseUs />
+            <Faq />
         </div>
     )
 }

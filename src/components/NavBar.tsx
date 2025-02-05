@@ -64,9 +64,9 @@ export default function HeaderComponent() {
                     <NavbarItem key={item.href} isActive={isActive === item.href}>
                         <Link
                             onClick={(e) => {
-                                e.preventDefault(); // Prevent default link behavior
+                                e.preventDefault();
                                 setIsActive(item.href);
-                                router.push(item.href); // Use Next.js client-side navigation
+                                router.push(item.href);
                             }}
                             color="foreground"
                             href={item.href}
@@ -104,7 +104,7 @@ export default function HeaderComponent() {
                     <NavbarMenuItem key={item.href}>
                         <Link
                             onClick={(e) => {
-                                e.preventDefault(); 
+                                e.preventDefault();
                                 setIsActive(item.href);
                                 router.push(item.href); 
                                 setIsMenuOpen(false);

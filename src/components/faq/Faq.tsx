@@ -2,6 +2,7 @@
 import { images } from "@/utils/constant/images";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import { ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 const Faq = () => {
     const faqs = [
@@ -48,18 +49,17 @@ const Faq = () => {
     ];
 
     return (
-        <div className={`relative flex flex-col items-center min-h-screen p-6 bg-gray-100`}>
+        <div className={`relative flex flex-col items-center min-h-screen p-6 `}>
             <div className="mt-10"></div>
 
-            <div className="relative mb-6 lg:left-60">
-                {/* <Image alt="Dots" src={images.prenatal} width={150} height={150} /> */}
+            <div className="w-full flex justify-end md:px-32">
+                <Image alt="Dots" src={images.faq} width={150} height={150} />
             </div>
             <div className="w-full flex flex-col items-center">
                 <h2 className="md:text-3xl text-2xl font-semibold text-gray-800 mb-6 text-left">
                     Frequently Asked Questions
                 </h2>
-
-                <div className="md:w-[60%]">
+                <div className="md:w-[80%] max-sm:w-full">
                     <Accordion
                         fullWidth
                         selectionMode="multiple"

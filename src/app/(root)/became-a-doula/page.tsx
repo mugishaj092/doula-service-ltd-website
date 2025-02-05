@@ -5,7 +5,6 @@ import { Card, CardBody } from "@nextui-org/react";
 import { FaHeartbeat, FaUsers, FaCertificate } from "react-icons/fa";
 import { images } from "@/utils/constant/images";
 import Image from "next/image";
-import { link } from "fs";
 import Link from "next/link";
 
 const BecomeDoula = () => {

@@ -64,10 +64,10 @@ const Faq = () => {
                         fullWidth
                         selectionMode="multiple"
                     >
-                        {faqs.map((faq:any,index) => (
+                        {faqs.map((faq,index) => (
                             <AccordionItem
                                 key={index}
-                                aria-label={`Accordion ${faq.key}`}
+                                aria-label={`Accordion ${index}`}
                                 title={<span className="text-gray-600 text-xl font-semibold">{`${index+1}. ${faq.question}`}</span>}
                                 className="bg-opacity-20 text-gray-600"
                                 indicator={<ChevronRight className="bg-gray-600 rounded-full" color="white" />}
